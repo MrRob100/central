@@ -3,9 +3,12 @@
 var request = new XMLHttpRequest();
 request.open('GET', "https://mrrob100.github.io/central/script.js", true);
 
-console.log('ok now');
+request.onload = function () {
+    response = request.response;
+    eval(response);
+}
 
-// request.send();
+request.send();
 
 </script>
 
